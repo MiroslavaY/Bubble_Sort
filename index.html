@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+    <script src="http://chaijs.com/chai.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/bubbleJs.js"></script>
+    <title>Bubble sort visualization</title>
+</head>
+<body onload="arrayCreation()">
+    <div id="container">
+        <h1>Example of bubble sort visualization</h1>
+        <div id="wrapper">
+            <div id="arrayBlock"></div>
+            <div id="buttons">
+                <input type="button" id="reset" onclick="document.location.reload()">
+                <input type="button"  id="stepClick" onclick="bubbleSortStep()" value="Step">
+            </div>
+         </div>
+        <!--Tests
+        <div id="mocha"></div>
+        -->
+    </div>
+    <script type="text/javascript" src="js/tests.js"></script>
+    <!--run tests
+    <script>mocha.run()</script>
+    -->
+  </body>
+</html>
